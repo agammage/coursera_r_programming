@@ -53,6 +53,7 @@ cacheSolve <- function(x, ...) {
         # input (x).
         # If the inverse has already been calculated (and the matrix has not
         # changed), then cacheSolve retrieves the inverse from the cache.
+        # Note: this function assumes that the entered matrix is invertible.
         
         # Attempt to load the cached inverse from the matrix object.
         inv <- x$getinv()
